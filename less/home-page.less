@@ -56,9 +56,16 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @phone {
+        width: 80%; 
+     }
     }
   }
 }// home
+
+
+// my code 
 
 .fun-bus {
   border-bottom: 3px dashed @navigation-border;
@@ -75,5 +82,29 @@
 
 
 .btn {
-   .btn(@button-bg, @main-bg) 
+   .btn(@button-bg, @main-bg);
+
+   @media @phone {
+    width: 100%;
+   
+  }
 }
+
+
+.content-pick {
+   @media @phone {
+  // width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  // background: red;
+   }
+  }
+
+//   .destination{
+//     @media @phone {
+//       width: 80%; 
+//  }
+// }

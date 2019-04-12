@@ -188,8 +188,18 @@ header nav a {
   color: #212529;
   padding: 10px 25px 0px 25px;
 }
-header h1 {
+h1 {
   padding-right: 250px;
+}
+@media (max-width: 800px) {
+  h1 {
+    padding-right: 0px;
+  }
+}
+@media (max-width: 500px) {
+  h1 {
+    padding-right: 0px;
+  }
 }
 .footer {
   width: 100%;
@@ -248,6 +258,11 @@ header h1 {
   width: 30%;
   margin-bottom: 30px;
 }
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 80%;
+  }
+}
 .fun-bus {
   border-bottom: 3px dashed #C0C0C0;
   margin-top: -10px;
@@ -266,4 +281,17 @@ header h1 {
   font-size: 1.8rem;
   border-radius: 15px;
   text-align: center;
+}
+@media (max-width: 500px) {
+  .btn {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .content-pick {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
