@@ -169,37 +169,41 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-header {
+.nav {
+  border-bottom: 2px dashed #C0C0C0;
+  padding-bottom: 1%;
+  margin-top: 1%;
+}
+.nav .nav-content {
+  width: 100%;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  border-bottom: 3px dashed #C0C0C0;
-  padding: 25px;
-  margin: 10px;
-}
-header nav {
-  display: flex;
-  justify-content: center;
-  padding: 0px 25px 0px 25px;
-  font-size: 16px;
-  color: #212529;
-}
-header nav a {
-  color: #212529;
-  padding: 10px 25px 0px 25px;
-}
-h1 {
-  padding-right: 250px;
-}
-@media (max-width: 800px) {
-  h1 {
-    padding-right: 0px;
-  }
+  justify-content: space-between;
+  align-items: baseline;
 }
 @media (max-width: 500px) {
-  h1 {
-    padding-right: 0px;
+  .nav .nav-content {
+    margin-top: 3%;
+    flex-wrap: wrap;
+    justify-content: center;
   }
+}
+.nav .nav-content .logo {
+  max-width: 100%;
+}
+.nav .nav-content .nav-links {
+  max-width: 100%;
+  display: flex;
+  font-size: 100px;
+}
+@media (max-width: 500px) {
+  .nav .nav-content .nav-links {
+    margin: 3%;
+  }
+}
+.nav .nav-content .nav-links a {
+  margin-left: 20px;
+  font-size: 2rem;
+  color: #212529;
 }
 .footer {
   width: 100%;
@@ -222,12 +226,23 @@ h1 {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 80%;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
 }
-.home .content-section .img-content img {
-  border-radius: 10px;
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 48%;
+    order: -1;
+  }
+  .home .content-section .img-content img {
+    border-radius: 10px;
+  }
 }
 .home .inverse-content {
   padding-bottom: 30px;
@@ -265,14 +280,20 @@ h1 {
 }
 .fun-bus {
   border-bottom: 3px dashed #C0C0C0;
-  margin-top: -10px;
+  margin-top: 0px ;
   padding-bottom: 15px;
 }
 .img-content {
   margin-bottom: 15px;
 }
+@media (max-width: 500px) {
+  .img-content {
+    width: 80%;
+    order: -1;
+  }
+}
 .btn {
-  width: 200px;
+  width: 100%;
   background-color: #17A2B8;
   color: #FFFFFF;
   cursor: pointer;
@@ -289,6 +310,22 @@ h1 {
 }
 @media (max-width: 500px) {
   .content-pick {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 500px) {
+  .content-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 500px) {
+  .text-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
